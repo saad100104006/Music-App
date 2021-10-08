@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Speechify</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="constellations_mark_thomas_amp_nina_jay_2021"><![CDATA[Constellations | Mark thomas & Nina Jay | 2021]]></string>
+    <string name="getting_around_the_bowel">Getting around the bowel</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="up_next">Up Next</string>
+    <string name="_4_28">4:28</string>
+    <string name="_1_29">1:29</string>
+</resources>

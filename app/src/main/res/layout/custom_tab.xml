@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/firstTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_tab_left"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:padding="8dp"
+        android:text="Details"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/secondTv"
+        app:layout_constraintEnd_toStartOf="@+id/secondTv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondTv" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/firstSelectedTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/firstTv"
+        app:layout_constraintEnd_toEndOf="@+id/firstTv"
+        app:layout_constraintStart_toStartOf="@+id/firstTv"
+        app:layout_constraintTop_toTopOf="@+id/firstTv">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Details"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/secondTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_tab_middle"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:padding="8dp"
+        android:text="Lyrics"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdTv"
+        app:layout_constraintEnd_toStartOf="@+id/thirdTv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/firstTv"
+        app:layout_constraintTop_toTopOf="@+id/thirdTv" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/secondSelectedTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondTv"
+        app:layout_constraintEnd_toEndOf="@+id/secondTv"
+        app:layout_constraintStart_toEndOf="@+id/firstTv"
+        app:layout_constraintTop_toTopOf="@+id/secondTv">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Lyrics"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/thirdTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_tab_right"
+        android:gravity="center"
+        android:minWidth="100dp"
+        android:padding="8dp"
+        android:text="Visualization"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/secondTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/thirdSelectedTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdTv"
+        app:layout_constraintEnd_toEndOf="@+id/thirdTv"
+        app:layout_constraintStart_toEndOf="@+id/secondTv"
+        app:layout_constraintTop_toTopOf="@+id/thirdTv">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Visualization"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
